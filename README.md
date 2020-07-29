@@ -1,4 +1,4 @@
-# Um breve resumo sobre as funcionalidades e tecnologias utlizadas nesse blog
+Um breve resumo sobre as funcionalidades e tecnologias utlizadas nesse blog
 
 # Guiapress 
 
