@@ -1,0 +1,24 @@
+<%- include ('partials/header.ejs') %> <%- include ('partials/homenavbar.ejs')
+%>
+
+<body>
+  <div class="container">
+    <%- include ('partials/jumbotron') %>
+    <hr />
+    <% articles.forEach(article => { %>
+    <div class="card">
+      <div class="card-reader">
+        <h2>
+          <%= article.title %>
+        </h2>
+      </div>
+      <div class="card-body">
+        <a href="" class="btn btn-success">ler artigo</a>
+      </div>
+    </div>
+    <br />
+
+    <% }) %>
+  </div>
+</body>
+<%- include ('partials/footer.ejs') %>
