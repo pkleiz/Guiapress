@@ -3,9 +3,7 @@
 
 <body>
   <div class="container">
-    <%- include ('partials/jumbotron') %>
     <hr />
-    <% articles.forEach(article => { %>
     <div class="card">
       <div class="card-header">
         <h2>
@@ -13,12 +11,10 @@
         </h2>
       </div>
       <div class="card-body">
-        <a href="/<%= article.slug %>" class="btn btn-success">ler artigo</a>
+        <%- article.body %>
       </div>
     </div>
     <br />
-
-    <% }) %>
   </div>
 </body>
 <%- include ('partials/footer.ejs') %>
