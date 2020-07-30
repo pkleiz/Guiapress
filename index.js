@@ -34,6 +34,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   Article.findAll({
     order: [["id", "DESC"]],
+    limit: 3,
   }).then((articles) => {
     Category.findAll().then((categories) => {
       res.render("index", { articles: articles, categories: categories });
